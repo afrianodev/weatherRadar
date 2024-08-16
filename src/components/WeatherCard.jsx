@@ -14,7 +14,7 @@ const WeatherCard = () => {
   const displayData = weatherData || defaultWeather;
 
   return (
-    <div className="weather-card">
+    <div className="weather-card border border-gray-300 shadow-md">
       <h2>{displayData.location}</h2>
       <p>Temperature: {displayData.temperature}°C</p>
       <p>Condition: {displayData.condition}</p>
