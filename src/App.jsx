@@ -3,12 +3,15 @@ import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
 import WeatherProvider from './components/WeatherContext';
 import WeatherRank from './components/WeatherRank';
+import BackgroundVideo from './components/BackgroundVideo';
 
 
 const App = () => {
   return (
+
     <WeatherProvider>
       <div className="flex flex-col items-center">
+        <BackgroundVideo />
         <h1 className='mt-6 font-bold text-4xl'>WeatherRadar</h1>
         <SearchBar />
         <WeatherCard />
@@ -19,6 +22,7 @@ const App = () => {
         </div>
       </div>
     </WeatherProvider>
+
   );
 };
 
