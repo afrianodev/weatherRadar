@@ -6,9 +6,9 @@ export const WeatherContext = createContext();
 const WeatherProvider = ({ children }) => {
   // Default weather data
   const [weatherData, setWeatherData] = useState({
-    location: 'New York',
-    temperature: '20',
-    condition: 'Sunny'
+    location: 'Valledupar',
+    temperature: 'Bastante calor',
+    condition: 'Ultra caliente'
   });
 
   const fetchWeather = async (location) => {
