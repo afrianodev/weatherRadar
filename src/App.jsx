@@ -12,7 +12,10 @@ const App = () => {
     <WeatherProvider>
       <div className="flex flex-col items-center">
         <BackgroundVideo />
-        <h1 className='mt-6 font-bold text-4xl'>WeatherRadar</h1>
+        <div className='flex mt-8 justify-center items-center gap-2'>
+          <img src="https://i.imgur.com/JQZSwXl.png" alt="weather radar logo" className='w-14' />
+          <h1 className='font-bold text-4xl bg-gradient-to-r from-customDarkPurple to-customPurple bg-clip-text text-transparent'>Weather<span className='bg-gradient-to-r from-customPurple to-customOrange bg-clip-text text-transparent'>Radar</span></h1>
+        </div>
         <SearchBar />
         <WeatherCard />
         <div className='flex gap-6'>

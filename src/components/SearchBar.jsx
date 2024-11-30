@@ -11,14 +11,15 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="search-bar">
+    <div className="mt-6">
       <input
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         placeholder="Enter location"
+        className='px-2 py-1 border border-customDarkPurple'
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='border border-customDarkPurple bg-gradient-to-r from-customDarkPurple to-customPurple text-white px-6 py-1' onClick={handleSearch}>Search</button>
     </div>
   );
 };
