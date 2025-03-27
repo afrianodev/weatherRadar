@@ -9,7 +9,7 @@ let currentYear = new Date().getFullYear()
 
 function Footer() {
   return (
-    <div className='px-6 py-4 bg-gradient-to-r from-customDarkPurple via-[#1E1B4E] to-customDarkPurple text-white flex flex-col items-center justify-center'>
+    <div className='px-6 py-4 bg-[#141236] text-white flex flex-col items-center justify-center'>
       <div className='flex w-full justify-between items-center'>
         <div className='flex gap-8'>
           <a href='https://portfolio-afrianodev.vercel.app/' target='_blank' className='cursor-pointer select-none hover:scale-[102%]'>About Me</a>

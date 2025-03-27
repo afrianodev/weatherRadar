@@ -1,14 +1,11 @@
 import React from 'react';
 import SearchBar from './components/SearchBar';
-// import WeatherCard from './components/WeatherCard';
-// import WeatherProvider from './components/WeatherContext';
-// import WeatherRank from './components/WeatherRank';
 import BackgroundVideo from './components/BackgroundVideo';
 import Footer from './components/Footer';
 
 const App = () => {
   return (<>
-    <div className='w-full h-[100vh] flex flex-col justify-between items-center'>
+    <div className="relative w-full h-[100vh] flex flex-col justify-between items-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-[#141236] before:pointer-events-none">
       <BackgroundVideo />
       <div className="relative flex flex-col items-center w-full h-full mt-16">
         <div className='flex justify-center items-center gap-2'>
