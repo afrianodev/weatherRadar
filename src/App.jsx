@@ -1,6 +1,10 @@
 import React from 'react';
 import Main from './pages/Main'
+import Explore from './pages/Explore';
+import Planner from './pages/Planner';
 import NavBar from './components/NavBar';
+import Background from './components/Background';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //3. Personalized Daily Weather Briefings
 // Use AI to generate concise, friendly summaries tailored to the user.
@@ -20,10 +24,17 @@ import NavBar from './components/NavBar';
 
 const App = () => {
   return (
-  <div className='flex flex-col items-center justify-start gap-8 bg-neutral-50 w-screen h-screen'>
-    <NavBar />
-    <Main />
-  </div>);
+  <Router>
+    <div className="relative w-screen h-screen flex flex-col items-center justify-start gap-8">
+      <Background />
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/explore' element={<Explore />} />
+        <Route path='/planner' element={<Planner />} />
+      </Routes>
+    </div>
+  </Router>);
 };
 
 export default App;
