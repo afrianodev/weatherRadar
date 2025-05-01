@@ -28,7 +28,7 @@ const SearchBar = () => {
   const fetchWeatherByCoordinates = (lat, lon) => {
     setLoading(true); // Set loading to true
     axios
-      .get(`https://weatherradarserver.onrender.com/weather?lat=${lat}&lon=${lon}`)
+      .get(`https://weatherradarserver-179z.onrender.com/weather?lat=${lat}&lon=${lon}`)
       .then((result) => setWeatherData(result.data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false)); // Set loading to false after fetch
@@ -37,7 +37,7 @@ const SearchBar = () => {
   const fetchWeatherByLocation = () => {
     setLoading(true); // Set loading to true
     axios
-      .get(`https://weatherradarserver.onrender.com/weather?q=${location}`)
+      .get(`https://weatherradarserver-179z.onrender.com/weather?q=${location}`)
       .then((result) => setWeatherData(result.data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false)); // Set loading to false after fetch

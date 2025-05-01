@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (<>
-    <div className="relative w-full h-[100vh] flex flex-col justify-between items-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-[#141236] before:pointer-events-none">
+    <div className="relative w-full h-[100vh] flex flex-col justify-between items-center bg-gradient-to-b from-transparent from-40% to-[#141236]">
       <BackgroundVideo />
       <div className="relative flex flex-col items-center w-full h-full mt-16">
         <div className='flex justify-center items-center gap-2'>
