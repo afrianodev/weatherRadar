@@ -1,22 +1,29 @@
 import React from 'react';
-import SearchBar from './components/SearchBar';
-import BackgroundVideo from './components/BackgroundVideo';
-import Footer from './components/Footer';
+import Main from './pages/Main'
+import NavBar from './components/NavBar';
+
+//3. Personalized Daily Weather Briefings
+// Use AI to generate concise, friendly summaries tailored to the user.
+// “Good morning! It's 16°C in Mexico City. No rain expected. Great weather for your morning run!”
+
+// 1. AI-Powered Travel Packing Assistant
+// Suggest what to pack based on trip duration, destination weather, and planned activities.
+// “Heading to Tokyo for 5 days? Expect rain and cool temps. Pack a raincoat, light layers, and waterproof shoes.”
+
+//4. AI-Based Plant & Pet Care Tips
+//UV take care and protection
+//2. Mood-Based Weather Music/Playlist Recommender
+
+// 6. Smart Alerts with Adaptive Notifications
+// AI learns user habits (commute time, outdoor activities) and sends relevant alerts automatically.
+// “You usually jog at 7 AM. Tomorrow there’ll be heavy rain—consider rescheduling.”
 
 const App = () => {
-  return (<>
-    <div className="relative w-full h-[100vh] flex flex-col justify-between items-center bg-gradient-to-b from-transparent from-40% to-[#141236]">
-      <BackgroundVideo />
-      <div className="relative flex flex-col items-center w-full h-full mt-16">
-        <div className='flex justify-center items-center gap-2'>
-          <img src="https://i.imgur.com/JQZSwXl.png" alt="weather radar logo" className='w-14' />
-          <h1 className='font-bold text-4xl bg-gradient-to-r from-customDarkPurple to-customPurple bg-clip-text text-transparent'>Weather<span className='bg-gradient-to-r from-customPurple to-customOrange bg-clip-text text-transparent'>Radar</span></h1>
-        </div>
-        <SearchBar />
-      </div>
-    </div>
-      <Footer className='relative' />
-    </>);
+  return (
+  <div className='flex flex-col items-center justify-start gap-8 bg-neutral-50 w-screen h-screen'>
+    <NavBar />
+    <Main />
+  </div>);
 };
 
 export default App;
